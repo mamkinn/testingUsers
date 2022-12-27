@@ -1,0 +1,34 @@
+﻿<Window x:Class="экзамен_two.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:экзамен_two"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Login" Grid.Row="1" Grid.Column="1" Margin="0,12,222,105" RenderTransformOrigin="0.583,1.179"/>
+        <TextBlock Text="Password" Grid.Row="1" Grid.Column="1" Margin="0,48,202,64"/>
+        <TextBlock Text="Code" Grid.Row="1" Grid.Column="1" Margin="0,87,222,29" RenderTransformOrigin="0.516,1.128"/>
+
+        <TextBox x:Name="inputLogin" Grid.Row="1" Grid.Column="1" Margin="62,10,37,107"/>
+        <PasswordBox x:Name="inputPassword" Grid.Row="1" Grid.Column="1" Margin="62,40,0,76" HorizontalAlignment="Left" Width="165"/>
+        <TextBox x:Name="inputCode" Grid.Row="1" Grid.Column="1" Margin="62,87,132,29"/>
+
+        <Button Content="Вход"  x:Name="inSign" Grid.Column="1" Grid.Row="2" Margin="0,0,0,105" HorizontalAlignment="Right" Width="62" Click="inSign_Click" />
+        <Button Content="Отмена"  x:Name="cancl" Grid.Column="1" Grid.Row="2" Margin="0,0,0,105"  HorizontalAlignment="Left" Width="62" Click="cancl_Click"/>
+        <Button Content="Получить код" x:Name="Code" Grid.Column="1" Grid.Row="1" Margin="146,87,37,0" Height="24" VerticalAlignment="Top" Click="Code_Click"/>
+    </Grid>
+</Window>
